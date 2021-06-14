@@ -24,7 +24,7 @@ mongoose.connect(dbConfig.url, {
 });
 
 app.get("/",(req,res) => {
-    res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."})
+    res.send("Task-1 to perform CRUD operation")
 })
 
 require("./app/routes/users.routes")(app)
